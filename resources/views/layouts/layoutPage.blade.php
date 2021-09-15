@@ -8,12 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title')</title>
-
+    @production
+    <link rel="stylesheet" href="{{ secure_asset('{{ url('public/ForLayoutPage') }}/css/bootstrap.min.css') }}">
+    @endproduction
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="{{ url('uploads') }}/logo.png" type="image/x-icon" />
     <!-- Css Styles -->
-    <link rel="stylesheet" href="{{ url('public/ForLayoutPage') }}/css/bootstrap.min.css" type="text/css">
+    {{-- <link rel="stylesheet" href="" type="text/css"> --}}
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="{{ url('public/ForLayoutPage') }}/css/font-awesome.min.css" type="text/css">
