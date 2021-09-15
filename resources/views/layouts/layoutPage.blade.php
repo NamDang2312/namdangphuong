@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title')</title>
 
-    <link rel="stylesheet" href="public/ForLayoutPage/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{secure_asset('public/ForLayoutPage/css/bootstrap.min.css')  }}">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
