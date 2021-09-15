@@ -19,8 +19,8 @@ class CreateOrderdetail extends Migration
             $table->integer('product_id');
             $table->integer('quantity');
             $table->integer('price');
-            $table->foreign('order_id')->reference('id')->on('order');
-            $table->foreign('product_id')->reference('id')->on('product');
+            $table->foreign('order_id')->references('id')->on('order');
+            $table->foreign('product_id')->references('id')->on('product');
         });
     }
 

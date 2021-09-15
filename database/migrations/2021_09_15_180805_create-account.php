@@ -22,7 +22,7 @@ class CreateAccount extends Migration
             $table->string('address');
             $table->string('role');
             $table->integer('STATUS');
-            $table->timestamps();
+           
         });
     }
 

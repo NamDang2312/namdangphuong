@@ -22,7 +22,7 @@ class CreateProduct extends Migration
             $table->string('image_list');
             $table->integer('STATUS');
             $table->integer('category_id');
-            $table->foreign('category_id')->reference('in')->on('category');
+            $table->foreign('category_id')->references('in')->on('category');
             $table->integer('sale_price');
         });
     }

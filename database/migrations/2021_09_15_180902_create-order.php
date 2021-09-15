@@ -22,7 +22,7 @@ class CreateOrder extends Migration
             $table->string('note');
             $table->integer('STATUS');
             $table->integer('account_id')->unsigned();
-            $table->foreign('account_id')->reference('id')->on('account');
+            $table->foreign('account_id')->references('id')->on('account');
         });
     }
 
