@@ -14,9 +14,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        if(evn('REDIRECT_HTTPS')){
+      
             $this -> app['request'] ->server->set('HTTPS',true);
-        }
+        
     }
 
     /**
@@ -26,10 +26,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if (evn('REDIRECT_HTTPS')) {
+      
             URL::formatScheme('https');
            
-        }
+        
         Paginator::useBootstrap();
     }
 }
